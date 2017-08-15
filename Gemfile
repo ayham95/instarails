@@ -20,9 +20,10 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 
-
+# my gems >.>
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'jquery-rails'
 gem 'paperclip', '~> 5.0.0'
-
 gem 'simple_form'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
