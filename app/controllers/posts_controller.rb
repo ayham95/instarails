@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_action :set_post
+
   def index
     @posts = Post.all.reverse
   end
@@ -35,6 +37,10 @@ class PostsController < ApplicationController
 
   private def post_params
     params.require(:post).permit(:image, :caption)
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
   end
 
 end
